@@ -1,0 +1,30 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "title": "Postman",
+      "description": "Full postman course from zero arabic"
+    },
+    {
+      "id": "2",
+      "title": "Selenium",
+      "description": "Full selenium course from zero arabic"
+    },
+    {
+      "id": "3",
+      "title": "Cypress",
+      "description": "Full cypress course from zero arabic"
+    },
+    {
+      "id": "4",
+      "title": "Cypress",
+      "description": "Full cypress course from zero arabic"
+    }
+  ],
+  "Users": [
+    {
+      "id": "1",
+      "name": "Roaa"
+    }
+  ]
+}
