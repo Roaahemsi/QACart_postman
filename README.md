@@ -8,7 +8,7 @@ Newman – Command-line execution of Postman collections
 Jenkins – CI pipeline for automated test execution and reporting
 
 # How to Run Tests
-newman run collection.json -e locally.postman_environment.json
+newman run QACart_Collection.json -e QACart_Environment.json
 
 # CI Integration
 Tests are executed automatically using Jenkins
