@@ -1,3 +1,0 @@
-"to run app 
-npx json-server db.json
-"
