@@ -1,0 +1,60 @@
+Started by timer
+Running as SYSTEM
+Building in workspace 
+[QACart_Postman_E2E_Testing] 
+
+newman
+
+Courses API
+
+→ Login
+  POST http://localhost:3000/signin [200 OK, 669B, 372ms]
+  √  Response time is less than 500ms
+
+→ Post Course
+  POST http://localhost:3000/660/courses [201 Created, 625B, 42ms]
+  √  Response time is less than 201ms
+
+→ Get Course 
+  GET http://localhost:3000/660/courses/4vFE48- [200 OK, 502B, 28ms]
+  √  check that the API response code is 200
+  √  check if the response contains JavaScript
+  √  Response time is less than 200ms
+  √  Check the title of the course
+
+→ Edit Course 
+  PUT http://localhost:3000/660/courses/4vFE48- [200 OK, 485B, 37ms]
+  √  Response time is less than 200ms
+
+→ Delete Course 
+  DELETE http://localhost:3000/660/courses/4vFE48- [200 OK, 395B, 39ms]
+  √  Status code is 200
+
+→ Get all courses 
+  GET http://localhost:3000/660/courses [200 OK, 1.17kB, 36ms]
+  √  Response time is less than 200ms
+
+→ Get course after delete
+  PUT http://localhost:3000/660/courses/4vFE48- [404 Not Found, 402B, 36ms]
+  √  Response time is less than 404ms
+
+┌─────────────────────────┬────────────────────┬───────────────────┐
+│                         │           executed │            failed │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│              iterations │                  1 │                 0 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│                requests │                  7 │                 0 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│            test-scripts │                  7 │                 0 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│      prerequest-scripts │                  1 │                 0 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│              assertions │                 10 │                 0 │
+├─────────────────────────┴────────────────────┴───────────────────┤
+│ total run duration: 1455ms                                       │
+├──────────────────────────────────────────────────────────────────┤
+│ total data received: 1.35kB (approx)                             │
+├──────────────────────────────────────────────────────────────────┤
+│ average response time: 84ms [min: 28ms, max: 372ms, s.d.: 117ms] │
+└──────────────────────────────────────────────────────────────────┘
+Finished: SUCCESS
