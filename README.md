@@ -14,3 +14,7 @@ newman run QACart_Collection.json -e QACart_Environment.json
 Tests are executed automatically using Jenkins
 Newman reports are generated after each run
 Results reflect automated API testing within a CI workflow
+
+
+#
+A summary screenshot of Newman execution results is included for demonstration purposes.
